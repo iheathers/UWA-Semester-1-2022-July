@@ -1,0 +1,1 @@
+SELECT title, name FROM titles, people, crewmembers WHERE crewmembers.title_id = titles.title_id AND people.person_id=crewmembers.person_id AND crewmembers.category="director";

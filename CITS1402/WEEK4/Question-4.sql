@@ -1,0 +1,1 @@
+SELECT title, rating FROM titles, ratings WHERE titles.title_id=ratings.title_id AND ratings.rating > 8.5;

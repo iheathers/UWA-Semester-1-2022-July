@@ -1,0 +1,19 @@
+#BlueJ class context
+comment0.target=WordleDictionary
+comment0.text=\n\ Manages\ a\ dictionary\ of\ words\ for\ use\ in\ Wordle.\n\ Modifed\ slightly\ from\ Project\ 1.\n\ Now\ has\ a\ new\ constructor.\n\ \n\ \!\!\!\ DO\ NOT\ MODIFY\ THIS\ CLASS\ \!\!\!\n\n\ @author\ Max\ Ward\n
+comment1.params=wordsFilePath
+comment1.target=WordleDictionary(java.lang.String)
+comment1.text=\n\ Constructs\ a\ WordleDictionary\ from\ a\ single\ parameter\ which\ gives\ a\ String\n\ containing\ the\ path\ to\ the\ file\ of\ words\ to\ use.\n
+comment2.params=
+comment2.target=WordleDictionary()
+comment2.text=\n\ Default\ constructor\ for\ use\ in\ BlueJ\ that\ uses\ the\ default\ path\ to\ "words.txt".\n
+comment3.params=words
+comment3.target=WordleDictionary(java.util.ArrayList)
+comment3.text=\n\ Constructs\ a\ dictionary\ with\ a\ user-specified\ list\ of\ words.\n
+comment4.params=length
+comment4.target=java.util.ArrayList\ getWordsWithLength(int)
+comment4.text=\n\ Returns\ an\ ArrayList\ containg\ all\ the\ words\ in\ the\ dictionary\ with\ a\ specified\ length\ (in\ number\ of\ letters).\n
+comment5.params=length
+comment5.target=java.lang.String\ getRandomWord(int)
+comment5.text=\n\ Returns\ a\ randomly\ selected\ word\ from\ the\ dictionary\ with\ a\ specified\ length.\n
+numComments=6

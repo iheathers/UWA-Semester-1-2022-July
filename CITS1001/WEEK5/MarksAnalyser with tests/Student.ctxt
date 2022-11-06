@@ -1,0 +1,17 @@
+#BlueJ class context
+comment0.params=fullName\ markawarded
+comment0.target=Student(java.lang.String,\ int)
+comment0.text=\r\n\ Create\ a\ new\ student\ with\ a\ given\ name\ and\ ID\ number.\r\n
+comment1.params=
+comment1.target=java.lang.String\ getName()
+comment1.text=\r\n\ Return\ the\ full\ name\ of\ this\ student.\r\n
+comment2.params=
+comment2.target=int\ getMark()
+comment2.text=\r\n\ @return\ int\ the\ mark\ awarded\ for\ this\ student.\r\n
+comment3.params=newMark
+comment3.target=void\ addMark(int)
+comment3.text=\r\n\ Method\ to\ add\ a\ newmark\ to\ the\ current\ total\ mark.\r\n\ @param\ newMark\ score\ to\ be\ added\ to\ totalMark\r\n\ Currently\ no\ checks\ for\ mark\ validity\r\n
+comment4.params=
+comment4.target=java.lang.String\ toString()
+comment4.text=\r\n\ Method\ to\ return\ a\ String\ of\ student\ details\r\n
+numComments=5

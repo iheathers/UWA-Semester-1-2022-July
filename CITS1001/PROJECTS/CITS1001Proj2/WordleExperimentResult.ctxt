@@ -1,0 +1,10 @@
+#BlueJ class context
+comment0.target=WordleExperimentResult
+comment0.text=\n\ Used\ to\ store\ the\ result\ of\ a\ WordleExperiment.\n\ \n\ \!\!\!\ DO\ NOT\ MODIFY\ THIS\ CLASS\ \!\!\!\n\n\ @author\ Max\ Ward\n
+comment1.params=word\ guesses
+comment1.target=WordleExperimentResult(java.lang.String,\ java.util.ArrayList)
+comment2.params=
+comment2.target=java.lang.String\ getWord()
+comment3.params=
+comment3.target=java.util.ArrayList\ getGuesses()
+numComments=4

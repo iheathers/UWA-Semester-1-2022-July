@@ -1,0 +1,1 @@
+SELECT name, characters FROM castmembers, people WHERE castmembers.person_id=people.person_id AND castmembers.title_id="tt0172495";
