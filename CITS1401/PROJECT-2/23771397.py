@@ -240,12 +240,18 @@ def get_list_of_euclidean_distances(subj_ids, subjects_data):
     for sub_id in subj_ids:
         if subj_ids[sub_id] in total_subject_ids:
             sub_data = subjects_data[subj_ids[sub_id]]
+
             sub_distances = get_euclidean_distances_for_id(sub_data)
             list_of_euclidean_distances.append(sub_distances)
         else:
             list_of_euclidean_distances.append(None)
 
     return list_of_euclidean_distances
+
+
+def validate_data_for_id(subj_id, subjects_data):
+    if subj_id in subjects_data:
+        print("true")
 
 
 def get_euclidean_distances_for_id(sub_data):
@@ -278,7 +284,9 @@ def get_euclidean_distances_for_id(sub_data):
     euclidean_distances = {}
 
     for landmark in FACIAL_DISTANCES:
+
         try:
+
             euclidean_distances[landmark] = get_euclidean_distance(sub_data[FACIAL_DISTANCES[landmark][1]],
                                                                    sub_data[FACIAL_DISTANCES[landmark][0]])
         except:
@@ -304,12 +312,16 @@ def get_list_of_facial_asymmetries(subj_ids, subjects_data):
         if subj_ids[sub_id] in total_subject_ids:
             sub_data = subjects_data[subj_ids[sub_id]]
             sub_asymmetries = get_facial_asymmetries_for_id(sub_data)
-            rounded_sub_asymmetries = {}
 
-            for key in sub_asymmetries.keys():
-                rounded_sub_asymmetries[key] = round(sub_asymmetries[key], 4)
+            if sub_asymmetries:
+                rounded_sub_asymmetries = {}
 
-            list_of_facial_asymmetries.append(rounded_sub_asymmetries)
+                for key in sub_asymmetries.keys():
+                    rounded_sub_asymmetries[key] = round(sub_asymmetries[key], 4)
+
+                list_of_facial_asymmetries.append(rounded_sub_asymmetries)
+            else:
+                list_of_facial_asymmetries.append(None)
         else:
             list_of_facial_asymmetries.append(None)
 
@@ -582,3 +594,15 @@ def sum_of_squares(data_list):
         total_sum = total_sum + item ** 2
 
     return total_sum
+
+
+# OP = main('TestData1.csv', ['D8328', 'E4996'])
+# print(OP)
+
+OP1, OP2, OP3, OP4 = main('TestData7.csv', ['D8328', 'E4996'])
+print(OP1)
+print(OP2)
+print(OP3)
+print(OP4)
+
+# OP = main('TestData6.csv', ['D8328', 'E4996'])
