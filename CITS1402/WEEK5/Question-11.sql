@@ -1,1 +1,0 @@
-SELECT firstName, lastName FROM employees WHERE reportsTo IS NULL;

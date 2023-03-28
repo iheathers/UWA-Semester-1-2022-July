@@ -1,3 +1,0 @@
-SELECT category, COUNT(*) AS "number of occurrences"
-FROM crewmembers
-GROUP BY category;

@@ -1,1 +1,0 @@
-SELECT title, rating, votes FROM titles, ratings WHERE titles.title_id=ratings.title_id AND ratings.votes > 1000000 ORDER BY rating DESC

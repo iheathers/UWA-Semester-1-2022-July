@@ -1,1 +1,0 @@
-SELECT SUM(quantityOrdered*priceEach) AS total_price FROM orderdetails WHERE orderNumber=10122;

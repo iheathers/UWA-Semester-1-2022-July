@@ -1,1 +1,0 @@
-SELECT title, (runtime_minutes / 60) AS hours, (runtime_minutes % 60) AS minutes FROM titles;

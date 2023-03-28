@@ -1,1 +1,0 @@
-SELECT COUNT(*) FROM castmembers WHERE title_id="tt0167260";
